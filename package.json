@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/core": "^5.5.0",
     "@aws-amplify/datastore": "^4.6.0",
     "@aws-amplify/ui-react": "^5.0.1",
     "@chakra-ui/react": "^2.7.0",

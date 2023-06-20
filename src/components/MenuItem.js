@@ -12,6 +12,7 @@ function MenuItem(props) {
       fontWeight={"400"}
       borderRadius={"4px"}
       height={"32px"}
+      minW={"130px"}
       onClick={props.onClick}
       border={
         isSecondaryStyle

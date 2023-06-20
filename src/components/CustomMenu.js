@@ -1,8 +1,8 @@
-import { Box, ButtonGroup, Flex, Menu, Text, useMediaQuery } from '@chakra-ui/react';
+import { ButtonGroup, Flex, Menu, Text, useMediaQuery } from '@chakra-ui/react';
 import MenuItem from './MenuItem';
 import AllCardsIcon from './icons/AllCardsIcon';
 import DecksIcon from './icons/DecksIcon';
-import { Amplify } from 'aws-amplify';
+import SignOutMenuItem from './SignOutMenuItem';
 
 function CustomMenu({ type, handleTypeChange, name }) {
   const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
@@ -29,13 +29,7 @@ function CustomMenu({ type, handleTypeChange, name }) {
             SW-API Deck Builder
           </Text>
         )}
-        <Box onClick={()=>Amplify.Auth.signOut()}>
-          <MenuItem
-            text={name}
-            isSecondaryStyle={true}
-          />
-        </Box>
-
+        <SignOutMenuItem name={name}/>
       </Flex>
     </Menu>
   );
