@@ -1,0 +1,21 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-smsreactassessment-dev-204928-authRole",
+      "UnauthRoleArn": "arn:aws:iam::233271173214:role/amplify-smsreactassessment-dev-204928-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::233271173214:role/amplify-smsreactassessment-dev-204928-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-smsreactassessment-dev-204928-deployment",
+      "UnauthRoleName": "amplify-smsreactassessment-dev-204928-unauthRole",
+      "StackName": "amplify-smsreactassessment-dev-204928",
+      "StackId": "arn:aws:cloudformation:us-east-1:233271173214:stack/amplify-smsreactassessment-dev-204928/b2c3baa0-0f0c-11ee-8914-1263aab5ef73",
+      "AmplifyAppId": "db164scl8c3js"
+    },
+    "categories": {
+      "auth": {
+        "smsreactassessmentb1e53234": {},
+        "smsreactassessment": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+type Deck @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  faction: String!
+  cards: [Int!]!
+  userId: String!
+}

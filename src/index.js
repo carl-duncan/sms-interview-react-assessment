@@ -1,17 +1,29 @@
 import { ColorModeScript } from '@chakra-ui/react';
 import React, { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
+import { Amplify } from 'aws-amplify';
+import { Authenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+import awsmobile from './aws-exports';
+import App from './App';
 
+Amplify.configure(awsmobile);
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
+
+
+
 
 root.render(
   <StrictMode>
     <ColorModeScript />
-    <App />
+      <Authenticator>
+        {({ signOut, user }) => (
+          <App />
+        )}
+      </Authenticator>
   </StrictMode>
 );
 
